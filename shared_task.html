@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Joint Workshop of the 5th Financial Technology and Natural Language Processing (FinNLP) and 2nd Multimodal AI For Financial Forecasting (Muffin)</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body id="top">
+<div class="wrapper row1">
+  <header id="header" class="hoc clear">
+    <!-- ################################################################################################ -->
+    <div id="logo" class="fl_left">
+      <h1><a href="index.html">FinNLP + Muffin@IJCAI-2023</a></h1>
+    </div>
+    <nav id="mainav" class="fl_right">
+      <ul class="clear">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="talks.html">Invited Talks</a></li>
+        <li><a href="tutorial.html">Invited Tutorials</a></li>
+        <li><a href="cfp.html">CFP</a></li>
+        <li class="active"><a href="shared_task.html">Shared Tasks</a></li>
+        <li><a href="index.html#important-date">Important Dates</a></li>
+        <li><a href="index.html#organizer">Organizers</a></li>
+      </ul>
+    </nav>
+    <!-- ################################################################################################ -->
+  </header>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper bgded overlay" style="background-image:url('images/demo/backgrounds/muffin.jpeg');">
+  <div id="pageintro" class="hoc clear">
+    <!-- ################################################################################################ -->
+      <h3 class="heading"> IJCAI-2023 Joint Workshop of the 5th Financial Technology and Natural Language Processing (FinNLP) and 2nd Multimodal AI For Financial Forecasting (Muffin)</h3>
+      <h4>19-25 August, 2023</h4>
+      <h4>Location: Macau</h4>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<div class="wrapper row3" style="background-color: whitesmoke;">
+  <main class="hoc container clear">
+    <!-- main body -->
+    <!-- ################################################################################################ -->
+    <section>
+      <div>
+        <p> TBD </p>
+<!--         <h6 class="heading"> About the Shared Task</h6>
+        <p>
+          The Multimodal AI for Finance Forecasting (Muffin) workshop will host two shared tasks on challenging multimodal financial forecasting problems using artificial intelligence:
+        </p>
+
+        <h5>Task-1: Financial Prediction from Conference Call Videos</h5>
+        <p>
+          <br>Monetary policy calls (MPC) provide important insights into the actions taken by a country’s central bank on economic goals related to inflation, employment, prices, and interest rates. Investors and analysts critically analyze these video calls to forecast prices of stock market, treasury bonds, gold, and currency exchange rates post the conference call. Prior works in the NLP literature have looked at what is being said during the press conferences although there is a greater need to focus on how it is being said. The use of multimodal (visual+textual+audio) input to answer this question has been largely limited. Non-verbal behavioral cues from conference videos such as eye-movements, facial expressions, postures, gaits, complexity of language, vocal tone and facial expressions of the speakers may reflect emotions that subjects may not express through words and have been found to be strongly correlated with enhanced trading activities in the financial markets. Interpreting and extracting information from financial conference calls reveals difficult challenges such as: (1) Gap in current multimodal AI methods for simultaneously leverage visual, vocal and verbal modalities; (2) Long length of videos (50min to 1 hour) with multi-page text transcripts (3) Need to explore few-shot,  semi-supervised, and self-supervised  methods due to limited training data; (4) Large variability in conference calls across geographies due to different speakers, demographics, and economic conditions causing unintended bias. To this end, we curated a dataset of video conference calls from 2009 to 2022 released by central banks of 6 major English-speaking economies - USA, Canada, European Union, United Kingdom, New Zealand, and South Africa. The data has been processed to extract video frames, audio recordings, and utterance-aligned text transcripts. The task is to predict the volatility and price movement of stock market indices, gold, currency exchange rates, and bond prices T days after a conference call. We provide a cumulative of 25K data points split across training/development/testing for experimentation.
+          <br>The train/validation/test corpus can be downloaded from: <a href ="https://github.com/monopoly-monitory-policy-calls/MONOPOLY"> here </a>.
+          <br>Relevant research paper: <a href ="https://dl.acm.org/doi/pdf/10.1145/3503161.3548380"> [1] MONOPOLY: Financial Prediction from MONetary POLicY Conference Videos Using Multimodal Cues </a>
+        </p>
+
+        <h5>Task-2: Cryptocurrency Bubble Detection on Social Media</h5>
+        <p>
+          Cryptocurrency trading presents a new investment opportunity for maximizing profits. The rising ubiquity of speculative trading of cryptocurrencies over social media leads to rapid escalation and crash of price in a short period of time, also called bubbles, causing investment losses and bankruptcy. These crypto bubbles are strongly tied to user sentiment and social media usage as opposed to conventional value driven stocks and equities. Such financial bubbles are often a result of social media hype and the intensity of contagion among users, rendering both conventional statistical models and contemporary ML models weak as they are not built to deal with large volumes of unstructured, user-generated text on social media. In order to identify and safeguard against such bubbles, we formulate CryptoBubbles Detection Challenge - a novel multi-span prediction task over future days of time series price date for crypto assets. We have curated a dataset of 50 most traded crypto coins by volume from top 9 crypto exchanges such as Binance, Gateio, etc to obtain a time series of prices for 450+ crypto assets over five years accompanied with over 2.4 million related tweets.
+          <br>The train/validation/test corpus can be downloaded from: <a href ="https://github.com/gtfintechlab/cryptobubbles-naacl"> here </a>.
+          <br>Relevant research paper: <a href ="https://aclanthology.org/2022.naacl-main.405.pdf"> [2] Cryptocurrency Bubble Detection: A New Stock Market Dataset, Financial Task & Hyperbolic Models</a>
+        </p>
+        
+        <h5> Participation Guidelines </h5>
+        <p>
+        In order to participate, please first fill out this form to register for the shared tasks: <a href ="https://forms.gle/Z8e2UT5dtn5gsejW8"> here </a>. The team name that is provided in this form will be used in the subsequent submissions and communications.
+        <br> Use the train / validation / test dataset provided in the github pages to design your systems. Final results should be submitted as a 4-8 page paper to the EasyChair Submission Link by Shared Tasks paper submission deadline (December 15, 2023). All submitted papers will be evaluated based on their (1) novely, (2) performance results, (3) system description, and (4) reproducability. Participants are highly encouraged to submit their code and scripts to enhance reproducability and describe the system parametrs in sufficient details. Accepted submissions will be published as part of workshop proceedings.
+        </p> 
+        <h4> Task and Data Citations </h4>
+        <p>
+          If you utilize the any of the above dataset or build solutions for / inspired by the above tasks, please cite the relevant work:
+          <br> [1] Mathur, Puneet, Atula Tejaswi Neerkaje, Malika Chhibber, Ramit Sawhney, Fuming Guo, Franck Dernoncourt, Sanghamitra Dutta and Dinesh Manocha. “MONOPOLY: Financial Prediction from MONetary POLicY Conference Videos Using Multimodal Cues.” Proceedings of the 30th ACM International Conference on Multimedia (2022).
+          <br> [2] Sawhney, Ramit, Shivam Agarwal, Vivek Mittal, Paolo Rosso, Vikram Nanda and Sudheer Chava. “Cryptocurrency Bubble Detection: A New Stock Market Dataset, Financial Task & Hyperbolic Models.” NAACL (2022).          
+        </p> -->
+          
+      </div>
+    </section>
+  </main>
+</div>
+
+
+<!-- ################################################################################################ -->
+<!-- <div class="wrapper row3" style="background-color: whitesmoke;">
+  <main class="hoc container clear">
+    <!-- main body -->
+    <!-- ################################################################################################ -->
+<!-- 
+  <section>
+      <div>
+        <h6 class="heading">Important Dates for Shared Task Submission</h6>
+        <ul>
+          <li>Paper submission deadline: December 23, 2022</li>
+          <li>Acceptance notification: January 5, 2023</li>
+          <li>Camera-ready submission: January 15, 2023</li>
+          <li><strong>Muffin workshop at AAAI 2023:</strong>Feb 14, 2023: 8:30 AM-12:30 PM</li>
+        </ul>
+        <p>All deadlines are “anywhere on earth” (UTC-12)</p>
+      </div>
+    </section>
+  </main>
+</div> 
+-->
+<!-- ################################################################################################ -->
+
+
+<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+<!-- JAVASCRIPTS -->
+<script src="layout/scripts/jquery.min.js"></script>
+<script src="layout/scripts/jquery.backtotop.js"></script>
+<script src="layout/scripts/jquery.mobilemenu.js"></script>
+</body>
+</html>
